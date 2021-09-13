@@ -6,13 +6,13 @@
     <script>
       let POST_TITLE="Destroying Flappy Bird with a Genetic Algorithm"
     </script>
-    <script src="/githubpage/posts/posts.js"></script>
+    <script src="/~mark-turpen/githubpage/posts/posts.js"></script>
     <div class="post_body">
       <p>
       Click and drag on the window below to draw a digit from 0 to 9, then press "compute" to see what digit the network thinks you drew.  Press "clear" to clear the screen.
       </p>
       <p>
-        <iframe width='400' height='460' src="/githubpage/posts/nnet/netjs/index.html"></iframe>
+        <iframe width='400' height='460' src="/~mark-turpen/githubpage/posts/nnet/netjs/index.html"></iframe>
       </p>
       <p>
         View code <a href="https://editor.p5js.org/mark-turpen@tamu.edu/sketches/qiOiIBT-2">here:</a>
@@ -24,7 +24,7 @@
         Below is graph created by the program that allows us to visually gauge the networks performance on the first 25 test images.  Each image has two numbers above and to the left of itself.  The rightmost number is the network's classification of the image, and the left most number is the classification given by the person who drew the digit.  We can see that the network is correct on all but two of the 25 images.  Notice how the network miss labeled the bottom left image as a seven.  This is understandable since the only feature differentiating it from a nine is a few black pixels in the center.  I wouldn't expect a human to make this error; however, we humans have seen billions of nines and this network has only seen 5,000.
       </p>
       <p>
-        <img src="/githubpage/posts/nnet/thumbnail.png">
+        <img src="/~mark-turpen/githubpage/posts/nnet/thumbnail.png">
       </p>
       <p>
         If you would like to run this program yourself, go to my GitHub repository <a href="https://github.com/Mark-Turpen/NeuralNet2">here</a> and download the files "NeuralNet.py" and "mist.npz".  Then, while in your downloads folder, type "python NeuralNet.py" into the terminal.  Once it finishes training, it will display the network's accuracy across all test images and create a plot very similar to the one above.  For this to work, you will need to have python 3 installed as well as the libraries: math, random, numpy, matplotlib, and time.  This network takes about and hour to train on my MacBook, but it might take more or less time depending on your device.

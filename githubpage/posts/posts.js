@@ -17,11 +17,11 @@ let func=(title)=>{
   let style=document.createElement('link')
   style.rel="stylesheet"
   style.type="text/css"
-  style.href="/githubpage/style.css"
+  style.href="/~mark-turpen/githubpage/style.css"
   head.appendChild(style)
   let logo=document.createElement("link")
   logo.rel="icon"
-  logo.href="/githubpage/logo.png"
+  logo.href="/~mark-turpen/githubpage/logo.png"
   head.appendChild(logo)
   let meta=document.createElement("meta")
   meta.charset="utf-8"
@@ -44,7 +44,7 @@ let func=(title)=>{
   let home=document.createElement("th")
   home.className="home"
   let homelink=document.createElement("a")
-  homelink.href="/githubpage"
+  homelink.href="/~mark-turpen/githubpage"
   homelink.appendChild(document.createTextNode("home."))
   home.appendChild(homelink)
   row.appendChild(home)

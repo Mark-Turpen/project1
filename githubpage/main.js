@@ -49,7 +49,7 @@ console.log("main.js")
 
 let postlist=[]
 
-fetch("/githubpage/posts/posts.json").then((rsp)=>{
+fetch("/~mark-turpen/githubpage/posts/posts.json").then((rsp)=>{
     return rsp.json()
 }).then((data)=>{
     let arr=data.array;
