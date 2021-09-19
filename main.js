@@ -12,14 +12,14 @@ function setcookie(mag){
 function main(){
 
     console.log(document.cookie)
-    console.log("main.js")
+    console.log("_main.js")
     let body=document.getElementsByTagName('body')[0]
     let ck=document.cookie.split(";")
     magenta=true;
     if(document.cookie.match(/magenta=f/)!=null) magenta=false
     setcookie(magenta)
     if(!magenta){
-        body.style.color="green"
+        body.style.color="#23f923"
     }else{
         setcookie(true)
         body.style.color="magenta"
@@ -47,7 +47,7 @@ function main(){
     bt.onclick=()=>{
         magenta=!magenta
         setcookie(magenta)
-        body.style.color=magenta?"magenta":"green"
+        body.style.color=magenta?"magenta":"#23f923"
         console.log(document.cookie)
     }
     th4.appendChild(bt)
